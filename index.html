@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myself</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://kit.fontawesome.com/a7f3fa6d59.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        
+        <nav>
+            <img src="images/download-removebg-preview.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+               
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <img src="images/Messenger_creation_22C23E3E-2C1C-4CF5-BAE8-45F7B009988A.jpeg" class="right-picture">
+            
+           
+        </nav>
+        <div class="header-text">
+        <p> I am a Student</p>
+        <h1>Hi, I'm <span>Shamiksha </span><br> <span class="red-text">Sedhain</span> from <span class="blue-text">N</span><span class="green-text">epal</span></h1>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+            <img src="images/Messenger_creation_59A9B5CC-8B04-457E-BD4F-40855BA62A03.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"> About Me</h1>
+    
+          <p> My name is samiksha sedhain, and I am from dolakha. I am hindu and currently studying Management in class 12. I complete my SEE from kshmawoti S.S. I have khowledge of C++, HTML, CSS, JavaScript, Web development, and 
+            I use Visual Studio Code for coding. I am interested in freelancing and want to explore opportunities in that field.
+          </p>
+       <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+       </div>
+       <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>WEB Development</span><br>Studied frontend technologies like HTML, CSS, JavaScript to build responsive websites.<br><br>
+            Developed a personal portfolio website as a practical project.<br><br>
+        Learned about version control systems like Git and hosting paltform likes GitHub.</li>
+            <li><span>UI/UX design</span><br>Learned principles of user experience (UX) design including user research and wireframing, and prototyping.<br><br>
+            Designed user friendly interfaces focusing on usability and accessibility.<br></li>
+            <li><span>Communication Skills</span><br>Speaking clearly, confidently and persuasively.<br><br>
+            Using gestures, facial expressions, and body language effectively.<br><br>
+        Writing emails, reports, and other content with clarity and proper structure.</li>
+            
+        </ul>
+       </div>
+      
+       <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2023</span><br>Complete Secondary Education Examination from Shree kshmawoti secondary school, Dolakha.<br><br>
+            Achieved strong academic performance, focusing on core subjects like Math, Science and Computer.<br><br>
+        Actively participated in school events and competitions, develoing communication and teamwork skills.</li>
+            <li><span>2023-Present</span><br>Join +2 at Laligurans Batika secondary school, Kathmandu.<br><br>
+            Specialized in management with a focus on accounting and computer science.<br><br>
+        Engaged in extracurricular activities and group project.</li>
+           
+            
+        </ul>
+       </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+  <div id="portfolio"> 
+     <div class="container">
+        <h1 class="sub-title"> My Gallery</h1>
+        <div class="work-list">
+           
+            <div class="work">
+                <img src="images/10.jpeg">
+                <div class="layer">
+                  
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/11.jpeg">
+                <div class="layer">
+                    
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/13.jpeg">
+                <div class="layer">
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Messenger_creation_9B4C20DE-CA49-42FA-BF14-65DBD7BBAE0C.jpeg">
+                <div class="layer">
+                    
+                </div>
+            </div>
+        </div>
+    <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact"> 
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> samikshasedhain1221@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9761738412</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/IMG_20250106_193234.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="save_message.php" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>   
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Shamiksha. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+    
+    
+
+</body>
+
+</html>
